@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static "home-style.css" %}">
+    <title>Home</title>
+</head>
+<body>
+<section class="sec">
+    <header>
+        {% include 'menu.html' %}
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Student Management<br></h2>
+            <p>Say goodbye to the complicated, Welcome the simplified. 
+                Manage all your students in one place. create your 
+                students, give them marks, mail your students, get their
+                feedback. This is an all in one package for you to
+                go with...<br><br></p>
+            <a href="{% url 'about' %}">Learn more</a>
+        </div>
+        <div class="imgBox">
+            <img src="{%static 'images/homepagesvg.svg' %}">
+        </div>
+    </div> 
+</section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" type="text/css" href="{%static "home-style.css" %}">
+</head>
+<body>
+        <header>
+            <a href="{% url 'index' %}"><img src="{%static "images/logo.png" %}" class="logo"></a>
+            <ul>
+                <li><a href="{% url 'teacherhome' %}">Home</a></li>
+                <li><a href="{% url 'addstudent' %}">Add Student</a></li>
+                <li><a href="{% url 'viewstudent' %}">View Student</a></li>
+                <li><a href="{% url 'markupdate' %}">Mark Update</a></li>
+                <li><a href="{% url 'sendemail' %}">Mail</a></li>
+                <li><a href="{% url 'viewfeedback'%}">Feedback</a></li>
+                <li><a href="{% url 'login' %}">Logout</a></li>
+            </ul>
+        </header>
+</body>
+</html>

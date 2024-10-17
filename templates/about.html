@@ -1,0 +1,36 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'aboutus.css' %}">
+    <title>about</title>
+</head>
+<body>
+    <section class="sec">
+        {%include "menu.html"%}
+        <div class="content">
+            <div class="textBox">
+                <h2>developed,<br></h2>
+                <p>This project is developed with Django(framework) and 
+                    Python for backend. Html, CSS and Javascript is used for
+                    styling the webpages. This project contain a total of
+                    16 Html pages, 4 CSS files and JS files as well which includes 
+                    common webpage, teacher and student login webpages as well.<br><br>
+                </p>
+                <p>
+                    The database I used in this project is Sqlite3, a SQL database
+                    which comes with Django itself. This project is made with single app
+                    called 'std module' and some Python files like views.py, urls.py, admin.py,
+                    settings.py that comes with framework for working of project.
+                </p>
+            </div>
+            <div class="imgBox">
+                <img src="{% static 'images/aboutus-img.svg' %}">
+            </div>
+        </div> 
+    </section>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static "login-style.css"%}">
+	<title>login</title>
+</head>
+<body>
+{% include 'menu.html' %}
+<div class="center">
+	<form name=f1 method=post>{% csrf_token %}
+		<table>
+				<input id="username" name="myname" type="text" placeholder="Username or Student ID" required>
+				<input id="password" name="mypassword" type="password" placeholder="Password" required>
+				<br><br>
+				<select name="role">
+					<option>Teacher</option>
+					<option>Student</option>
+				</select>
+				<br><br><br>
+
+				<input type="submit" name=submit class="btn btn-primary" value="Login">
+				</td>
+			</tr>
+		</table>
+	</form>
+    </div>
+</body>
+</html>

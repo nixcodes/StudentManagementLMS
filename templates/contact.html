@@ -1,0 +1,54 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{%static 'aboutus.css' %}">
+        
+        <title>Documentation</title>
+    </head>
+    <body>
+    <section class='sec'>
+        {%include "menu.html"%}
+        <div class="content">
+            <div class="textBox">
+                <br><br>
+                <br><br>
+                <h2>Documentation,<br></h2>
+                <p>This project has three main interface general homepage which is common
+                    for everyone and then students login page and teacher login page.<br><br>
+                </p>
+                <h1>Home Page,<br></h1>
+                <p>
+                    This page act as the index of project people is redirected here when they 
+                    enter the url. Then from this page they can navigate to About, Documentation,
+                    and Login page. Then they can login as student or as teacher depending upon the role they are 
+                    assigned with.<br><br>
+                </p>
+                <h1>Teacher Login,<br></h1>
+                <p>
+                    The login credentials of the teacher is created by the developer itself. When they
+                    login as a teacher then they can have the following options like,
+                    creating students, viewing the students, updating marks to the students, sending
+                    them mails regarding assignments, important remainders or their newly updated marks,
+                    receiving feedback of the students.<br><br>
+                </p>
+
+                <h1>student Login,<br></h1>
+                <p>
+                    The student login id and password is provided by the Teacher and they can login
+                    only if their marks are updated for the subject else they can't. As a student 
+                    you can view you marks and other students marks of their class. They can also send 
+                    feedback to their teacher or an message regarding their teaching and questions.<br><br>
+                </p>
+            </div>
+            <div class="imgBox">
+                <img src="{% static 'images/documentation-img.svg' %}">
+            </div>
+        </div>
+    </section>
+    </body>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static 'home-style.css' %}">
+    <title>Teacher Home -Student Management</title>
+</head>
+<body>
+    <section class="sec">
+        {%include "menu2.html"%}
+        <div class="content">
+            <div class="textBox">
+                <h2>Hello teacher<br></h2>
+                <p>Go create your students and add them few marks send them 
+                    emails, all in one place.<br><br></p>
+                <a href="{% url 'viewstudent' %}">View Students</a>
+            </div>
+            <div class="imgBox">
+                <img src="{% static 'images/teacher-home.svg' %}">
+            </div>
+        </div> 
+    </section>
+</body>
+</html>

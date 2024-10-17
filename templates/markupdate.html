@@ -1,0 +1,24 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'student-register.css'%}">
+    <title>Mark Update</title>
+</head>
+<body>
+{% include 'menu2.html' %}
+    <br><br>
+    <div class="center">
+            <form name="f1" method="post" >{% csrf_token %}
+                <table>
+                        <input id="username" name="myid" type="number" placeholder="Student ID" required><br><br>
+                        <input id="mark" name="mymark" type="number" placeholder="Mark" required>
+                        <input type="submit" name=submit class="btn btn-primary" value="Update">
+                </table>
+        </form>
+    </div>
+</body>
+</html>

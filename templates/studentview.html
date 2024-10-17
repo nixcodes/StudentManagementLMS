@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'student-register.css' %}">
+    <title>student view</title>
+</head>
+<body>
+{% include 'menu2.html' %}
+<div class="student-view">
+{% block content %}
+    <table class="table" style="border: 1px solid black;">
+        <tr>
+            <td>Student ID</td>
+            <td>Student Name</td>
+            <td>Mobile NO</td>
+            <td>Email ID</td>
+            <td>Password</td>
+            <td>Course</td>
+            <td>Marks</td>
+        </tr>
+        {% for temp in data %}
+        <tr>
+            <td>{{ temp.sid }}</td>
+            <td>{{ temp.sname }}</td>
+            <td>{{ temp.mobile }}</td>
+            <td>{{ temp.email }}</td>
+            <td>{{ temp.password }}</td>
+            <td>{{ temp.course }}</td>
+            <td>{{ temp.mark }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endblock %}
+</div>
+</body>
+</html>
